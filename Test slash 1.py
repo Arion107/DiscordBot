@@ -74,7 +74,9 @@ async def start_bot():
                 for line in f:
                     user_id, count = line.strip().split(':')
                     users[int(user_id)] = int(count)
-
+            @bot.tree.command()
+            async def something(interaction: discord.Interaction):
+            
             @bot.event
             async def on_ready():
 
