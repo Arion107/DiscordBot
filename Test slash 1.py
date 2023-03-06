@@ -102,7 +102,7 @@ async def start_bot():
                 await ctx.response.send_message(
                     "Open the page below to pick your plan and subscribe! https://mee6.gg/m/thedream", ephemeral=True)
 
-            await bot.start()
+            await bot.start(TOKEN)
         except Exception as e:
             print(f"Error: {e}")
             await bot.close()
